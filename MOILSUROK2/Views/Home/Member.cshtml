@@ -1,0 +1,234 @@
+﻿@{
+    ViewBag.Title = "멤버관리";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+
+
+<address>
+
+    <div id="content">
+        <div id="right_container">
+
+            <div class="title_middle"></div>
+            <div class="title_right"></div>
+
+            <table width="690" border="0" cellspacing="0" cellpadding="0" style="border:thin">
+                <tr>
+                    <td colspan="5" style="border: 0px solid #beb9d4;">
+
+                        <select size="1" class="select_box" id="grannumberT" style="height: 25px;">
+                            <option value="all">전체</option>
+
+                            <option value="01">01</option>
+
+                            <option value="02">02</option>
+
+                            <option value="03">03</option>
+
+                            <option value="04">04</option>
+
+                            <option value="05">05</option>
+
+                            <option value="06">06</option>
+
+                            <option value="07">07</option>
+
+                            <option value="08">08</option>
+
+                            <option value="09">09</option>
+
+                            <option value="10">10</option>
+
+                            <option value="11">11</option>
+
+                            <option value="111">111</option>
+
+                            <option value="12">12</option>
+
+                            <option value="13">13</option>
+
+                            <option value="14">14</option>
+
+                            <option value="15">15</option>
+
+                            <option value="16">16</option>
+
+                            <option value="17">17</option>
+
+                            <option value="18">18</option>
+
+                            <option value="19">19</option>
+
+                            <option value="20">20</option>
+
+                            <option value="21">21</option>
+
+                            <option value="22">22</option>
+
+                            <option value="23">23</option>
+
+                            <option value="24">24</option>
+
+                            <option value="25">25</option>
+
+                            <option value="26">26</option>
+
+                            <option value="27">27</option>
+
+                            <option value="28">28</option>
+
+                            <option value="29">29</option>
+
+                            <option value="30">30</option>
+
+                            <option value="31">31</option>
+
+                            <option value="32">32</option>
+
+                            <option value="33">33</option>
+
+                            <option value="34">34</option>
+
+                            <option value="35">35</option>
+
+                            <option value="36">36</option>
+
+                            <option value="37">37</option>
+
+                            <option value="99">99</option>
+
+                        </select>
+                        <input style="height: 25px;" name="searchmem" id="searchWordmem" type="text" class="input_member" placeholder="검색어를 입력해 주세요">
+                        <button type="button" class="btn-primary btn-lg btn-space">검색</button>
+
+                    </td>
+
+
+                </tr>
+
+                <tr></tr>
+                <tr bgcolor="#d5d1e3" style="font-weight:bold; font-size:14px;">
+                    <td>회원번호</td>
+                    <td>기수</td>
+                    <td>성명</td>
+                    <td>전화번호</td>
+                    <td>이메일</td>
+                </tr>
+
+                <tr>
+                    <td>0101</td>
+                    <td>01</td>
+                    <td>강인관</td>
+                    <td>019-534-5267</td>
+                    <td>gman007@ynu.ac.kr</td>
+                </tr>
+
+
+                <tr>
+                    <td>0102</td>
+                    <td>01</td>
+                    <td>고성수</td>
+                    <td>010-8737-0055</td>
+                    <td>withkoh@naver.com </td>
+                </tr>
+
+
+                <tr>
+                    <td>0103</td>
+                    <td>01</td>
+                    <td>구천서</td>
+                    <td>011-227-1863</td>
+                    <td>cs9004@hotmail.com</td>
+                </tr>
+
+
+                <tr>
+                    <td>0104</td>
+                    <td>01</td>
+                    <td>권남혁</td>
+                    <td>010-7245-3476</td>
+                    <td>boowon2000@hanmail.net</td>
+                </tr>
+
+
+                <tr>
+                    <td>0105</td>
+                    <td>01</td>
+                    <td>김종</td>
+                    <td>017-250-5498</td>
+                    <td>chongk@emc.or.kr</td>
+                </tr>
+
+
+                <tr>
+                    <td>0106</td>
+                    <td>01</td>
+                    <td>김달수</td>
+                    <td>010-6251-0808</td>
+                    <td>kim42467@naver.com</td>
+                </tr>
+
+
+                <tr>
+                    <td>0107</td>
+                    <td>01</td>
+                    <td>김성수</td>
+                    <td>010-3710-7333</td>
+                    <td>webmaster@seootelecom.co.kr</td>
+                </tr>
+
+
+                <tr>
+                    <td>0108</td>
+                    <td>01</td>
+                    <td>남인석</td>
+                    <td>010-7129-7225</td>
+                    <td>namis@gokea.org</td>
+                </tr>
+
+
+                <tr>
+                    <td>0109</td>
+                    <td>01</td>
+                    <td>서영출</td>
+                    <td>010-5414-5234</td>
+                    <td>ss5234@yahoo.co.kr</td>
+                </tr>
+
+
+                <tr>
+                    <td>0110</td>
+                    <td>01</td>
+                    <td>신용철</td>
+                    <td>011-890-2533</td>
+                    <td></td>
+                </tr>
+
+
+
+                <tr bgcolor="#f7f7f7">
+                    <td colspan="5" style="border: 0px;">
+                        <table width="400" border="0" cellspacing="0" cellpadding="0" align="center" id="page" style="border: 0px;">
+                            <tr class="paging" id="paging">
+                                처음 < 1 2 3 4 5 6 7 8 9 10 > 끝
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</address>
+
+

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "공지작성";
+
+}
+<h2>@ViewBag.Title</h2>
+
+
+
+
+<address>
+
+    <div id="content">
+        <div id="right_container">
+
+            <table width="690" border="0" cellspacing="0" cellpadding="0" style="border:thin">
+                <div class="text-right">
+
+                    <button type="button" class="btn-primary btn-lg">취소</button>
+                </div>
+
+                <tr style="border: 0px solid #beb9d4;">
+                    <div class="label_1">
+                        중요도&nbsp;
+
+                        <select size="1" class="select_box" id="grannumberT" style="height: 25px;">
+
+                            <option value="normal">보통</option>
+
+                            <option value="important">중요</option>
+                        </select>
+                    </div>
+
+
+                    <br />
+                    <br />
+
+                    <div class="label_1">
+                        제목&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <input type="text" name="title" placeholder="제목을 입력하세요" style="border-radius:5px; width:50%; padding:5px;">
+                    </div>
+
+
+                    <br />
+
+                    <textarea class="ckeditor" id="editor1" rows="10">내용을 입력해주세요</textarea>
+
+                    <br />
+
+                    <div class="pt-1 text-right">
+                        <button class="btn btn btn-success" type="submit" style="width:10%; padding:5px;">작성</button>
+
+
+
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+</address>

@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "일정작성";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+
+
+<address>
+    <div id="content">
+        <div id="right_container">
+
+            <table width="690" border="0" cellspacing="0" cellpadding="0" style="border:thin">
+                <div class="text-right">
+                    <button type="button" class="btn-primary btn-lg">취소</button>
+                </div>
+
+
+
+                <div class="label_1">
+                    제목&nbsp;&nbsp;&nbsp;
+
+                    <input type="text" name="title" placeholder="제목을 입력하세요" style="border-radius:5px; width:100%; padding:5px;">
+                </div>
+
+
+                <br />
+                <br />
+
+                <tr style="border: 0px solid #beb9d4;">
+                    <div class="label_1">
+                        선택&nbsp;&nbsp;&nbsp;
+
+                        <select size="1" class="select_box" id="grannumberT" style="height: 25px;">
+
+                            <option value="normal">반복없음</option>
+
+                            <option value="week">매주</option>
+
+                            <option value="month">매월</option>
+
+                            <option value="year">매년</option>
+
+
+
+                        </select>
+
+
+
+
+                        <select size="1" class="select_box" id="grannumberT" style="height: 25px;">
+
+                            <option value="metting">모임</option>
+
+                            <option value="marriage">결혼</option>
+
+                            <option value="obituary">부고</option>
+
+                            <option value="etc">기타</option>
+
+
+
+                        </select>
+
+
+                </tr>
+
+                <br />
+                <br />
+
+                <tr style="border: 0px solid #beb9d4;">
+
+                    <div class="label_1">
+                        기간&nbsp;&nbsp;&nbsp;
+
+                        <input type="date">
+
+                    </div>
+                </tr>
+                <br />
+
+                <tr>
+                    <br />
+
+                    <textarea class="ckeditor" id="editor1" rows="10">내용을 입력해주세요</textarea>
+
+                    <br />
+
+                    <div class="pt-1 text-right">
+                        <button class="btn btn btn-success" type="submit" style="width:10%; padding:5px;">작성</button>
+
+
+
+                </tr>
+            </table>
+
+
+
+
+        </div>
+    </div>
+
+
+
+</address>

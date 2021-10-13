@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title - 관리자 홈페이지</title>
+    <script src="../../ckeditor/ckeditor.js"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("관리자 홈페이지", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+               
+                    <li>@Html.ActionLink("로그인", "Login", "Home")</li>
+                    <li>@Html.ActionLink("멤버관리", "Member", "Home")</li>
+                    <li>@Html.ActionLink("멤버추가", "AddMember", "Home")</li>
+                    <li>@Html.ActionLink("공지사항", "Notic", "Home")</li>
+                    <li>@Html.ActionLink("공지작성", "AddNotic", "Home")</li>
+                    <li>@Html.ActionLink("일정관리", "Calendar", "Home")</li>
+                    <li>@Html.ActionLink("일정작성", "AddCalendar", "Home")</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- 사이드바 -->
+        <nav class="col-sm-3 sidenav">
+            <h4>메뉴</h4>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="https://localhost:44390/Home/Member">멤버관리</a></li>
+                <li><a href="https://localhost:44390/Home/AddMember">멤버추가</a></li>
+                <li><a href="https://localhost:44390/Home/Notic">공지사항</a></li>
+                <li><a href="https://localhost:44390/Home/AddNotic">공지작성</a></li>
+                <li><a href="https://localhost:44390/Home/Calendar">일정관리</a></li>
+                <li><a href="https://localhost:44390/Home/AddCalendar">일정작성</a></li>
+            </ul>
+        </nav>
+        <!-- 사이드바 끝 -->
+        <!-- 본문 -->
+
+
+
+        <div class="col-sm-9 page">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - 관리자 홈페이지</p>
+            </footer>
+        </div>
+
+     
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        <script src="~/ckeditor/ckeditor.js"></script>
+        @RenderSection("scripts", required: false)
+</body>
+</html>
